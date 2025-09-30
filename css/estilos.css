@@ -1,0 +1,392 @@
+/* Fuente y colores principales */
+body {
+  margin: 20px;
+  font-family: 'DM Serif Text', serif;
+  background-color: #F5F5DC;
+  color: #000;
+}
+
+/* Header */
+.site-header {
+  background-color: #fff;
+  color:#000000;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo img {
+  height: 60px;
+  width: 60px;    
+  margin-right: 10px;
+  border-radius: 50%; 
+  object-fit: cover;  
+}
+
+.logo span {
+  font-size: 1.5rem;
+}
+
+/* Menú de navegación */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+.main-nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+.main-nav a.activo {
+  border-bottom: 2px solid #D6CBB3;
+}
+
+/* Menú hamburguesa */
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  background: #000000;
+  color: #fff;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+/* Contenido */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+/* Estilos generales para todos los títulos del sitio */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;     
+  font-family: 'DM Serif Text', serif;  
+  margin-bottom: 20px;        
+  margin-top: 20px;             
+}
+
+/* Tamaños generales*/
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+/* Imagen centrada de Historia */
+.historia-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.historia-imagen img {
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  object-fit: cover; 
+  border-radius: 12px; 
+}
+:root{
+  --fondo-pagina: #F5F5DC;
+  --color-acento: #023932;   
+  --fondo-tarjeta: #D6CBB3;  
+  --texto: #0b0b0b;
+  --borde-tarjeta: #D6CBB3;
+}
+
+.tarjetas-historia {
+  max-width: 800px;      
+  margin: 30px auto;     
+  display: flex;
+  flex-direction: column;
+  gap: 22px;            
+  padding: 0 16px;       
+}
+
+/* Estilo general de cada tarjeta */
+.tarjeta-texto {
+  background:#D6CBB3;
+  border-radius: 12px;
+  padding: 18px 20px;
+  color: #000;
+  width: 100%;          
+  box-sizing: border-box;
+}
+
+/* Título pequeño dentro de la tarjeta (centrado) */
+.tarjeta-texto h3 {
+  margin: 0 0 10px 0;
+  font-family: 'DM Serif Text', serif;
+  font-size: 1.15rem;
+  text-align: center; 
+  color: #000;
+}
+
+/* Párrafos dentro de la tarjeta */
+.tarjeta-texto p {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+  text-align: justify;  
+  font-size: 0.98rem;
+}
+
+/* Lista de puntos sin los bullets por defecto */
+.puntos {
+  list-style: none;    
+  padding-left: 0;
+  margin: 8px 0 0 0;
+}
+
+/* Cada elemento de la lista con un puntito verde a la izquierda */
+.puntos li {
+  position: relative;
+  padding-left: 22px;  
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* puntito verde usando pseudo-elemento*/
+.puntos li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;          
+  width: 10px;
+  height: 10px;
+  background: var(--color-acento);
+  border-radius: 50%;    
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08) inset;
+}
+
+/* RESPONSIVE: en pantallas muy pequeñas reduce paddings y textos */
+@media (max-width: 480px) {
+  .tarjeta-texto {
+    padding: 14px;
+    border-left-width: 5px;
+  }
+  .tarjeta-texto h3 {
+    font-size: 1rem;
+  }
+  .tarjeta-texto p,
+  .puntos li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Contenedor de tarjetas de Misión y Visión */
+.tarjetas-mision-vision {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+/* Diseño de cada tarjeta */
+.tarjeta-mv {
+  background-color: #D6CBB3;
+  width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Imagen dentro de cada tarjeta */
+.tarjeta-mv img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.tarjeta-mv h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.tarjeta-mv p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+/*  tarjeta seguridad*/
+.tarjeta-seguridad {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #D6CBB3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.seguridad-img img {
+  width: 30%;
+  height: 50px;  
+  object-fit: cover;
+  display: block;
+  margin: 0%;
+}
+.seguridad-contenido {
+  padding: 25px;
+  color: #000;
+}
+
+.seguridad-contenido h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+.seguridad-contenido p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.seguridad-contenido ul.puntos li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .seguridad-img img {
+    height: 180px;
+  }
+  .seguridad-contenido {
+    padding: 15px;
+  }
+  .seguridad-contenido h2 {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+/* Footer */
+.site-footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+.social-links a {
+  margin: 0 10px;
+  color: #000000;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    background: #023932;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+  }
+  .nav-toggle:checked + .main-nav {
+    display: flex;
+  }
+  .nav-toggle-label {
+    display: flex;
+  }
+/* Historia */
+@media (max-width: 768px) {
+  .tarjetas-mision-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-mv {
+    width: 90%;   /* Se ajusta al ancho de pantalla */
+    margin-bottom: 20px;
+  }
+
+  .tarjeta-mv img {
+    height: 180px;  /* Un poco más pequeña en móvil */
+  }
+}
+
+}
+/* Contenedor que alinea las tarjetas */
+.contenedor-productos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;  /* si son muchas, bajan a otra fila */
+  margin-top: 30px;
+}
+
+/* Cada tarjeta */
+.tarjeta {
+  background-color: #D6CBB3;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Tamaño de la imagen */
+.tarjeta img {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Botón */
+.tarjeta button {
+  background-color: #023932;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tarjeta button:hover {
+  background-color: #0c6947;
+}

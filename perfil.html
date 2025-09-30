@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Tierra Aroma — Login / Registro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="img/logo.png.webp" alt="Logo Café Tierra Aroma">
+        <span>Café <strong>Tierra Aroma</strong></span>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Catálogo de productos</a></li>
+          <li><a href="carrito.html">Carrito de compras</a></li>
+          <li><a href="historial.html">Historial de pedidos</a></li>
+          <li><a href="login.html" class="activo">Login / Registro</a></li>
+          <li><a href="perfil.html">Perfil de usuario</a></li>
+          <li><a href="cerrar.html">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <main class="container section">
+    <h1>Iniciar sesión</h1>
+    <p>Accede a tu cuenta para continuar con tus compras.</p>
+
+    <form class="formulario-login">
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+      <label for="clave">Contraseña</label>
+      <input type="password" id="clave" name="clave" placeholder="********" required>
+
+      <button type="submit">Ingresar</button>
+    </form>
+
+    <p class="texto-secundario">
+      ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
+    </p>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div class="social-links">
+        <a href="https://www.instagram.com/cafetierra_aroma" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/people/Caf%C3%A9-Tierra-Aroma/61552959929312" target="_blank">Facebook</a>
+        <a href="https://api.whatsapp.com/send/?phone=3125735183" target="_blank">WhatsApp</a>
+      </div>
+      <p>&copy; <span id="year"></span> Café Tierra Aroma</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

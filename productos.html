@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Tierra Aroma — Catálogo de productos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="img/logo.png.webp" alt="Logo Café Tierra Aroma">
+        <span>Café <strong>Tierra Aroma</strong></span>
+      </div>
+      <!-- Menú hamburguesa -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html" class="activo">Catálogo de productos</a></li>
+          <li><a href="carrito.html">Carrito de compras</a></li>
+          <li><a href="historial.html">Historial de pedidos</a></li>
+          <li><a href="login.html">Login / Registro</a></li>
+          <li><a href="perfil.html">Perfil de usuario</a></li>
+          <li><a href="cerrar.html">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <main class="container section">
+    <h1>Catálogo de productos</h1>
+    <p>Explora nuestra variedad de cafés molidos y tostados, cultivados en la vereda Pamplonita.</p>
+
+    <div class="contenedor-productos">
+  <div class="tarjeta">
+    <img src="img/500 Gramos T.webp" alt="cafe tostado 500 gramos">
+    <h4>Café tostado 500 gramos</h4>
+    <p>$28.000</p>
+    <button>Añadir a Carrito</button>
+  </div>
+
+  <div class="tarjeta">
+    <img src="img/250 Gramos T.webp" alt="cafe tostado 250 gramos">
+    <h4>Café tostado 250 gramos</h4>
+    <p>$15.000</p>
+    <button>Añadir a Carrito</button>
+  </div>
+
+  <div class="tarjeta">
+    <img src="img/125 Gramos T.webp" alt="cafe tostado 125 gramos">
+    <h4>Café tostado 125 gramos</h4>
+    <p>$8.500</p>
+    <button>Añadir a Carrito</button>
+  </div>
+   <div class="tarjeta">
+    <img src="img/250 Gramos TyM.webp" alt="cafe tostado y molido 500 gramos">
+    <h4>Café tostado y molido 500 gramos</h4>
+    <p>$28.000</p>
+    <button>Añadir a Carrito</button>
+  </div>
+
+  <div class="tarjeta">
+    <img src="img/250 Gramos TyM.webp" alt="cafe tostado y molido 250 gramos">
+    <h4>Café tostado y molido 250 gramos</h4>
+    <p>$15.000</p>
+    <button>Añadir a Carrito</button>
+  </div>
+
+  <div class="tarjeta">
+    <img src="img/125 Gramos TyM.webp" alt="cafe tostado y molido 125 gramos">
+    <h4>Café tostado y molido 125 gramos</h4>
+    <p>$8.500</p>
+    <button>Añadir a Carrito</button>
+  </div>
+</div>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div class="social-links">
+        <a href="https://www.instagram.com/cafetierra_aroma" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/people/Caf%C3%A9-Tierra-Aroma/61552959929312" target="_blank">Facebook</a>
+        <a href="https://api.whatsapp.com/send/?phone=3125735183" target="_blank">WhatsApp</a>
+      </div>
+      <p>&copy; <span id="year"></span> Café Tierra Aroma</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

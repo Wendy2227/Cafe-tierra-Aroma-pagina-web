@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Tierra Aroma — Carrito de compras</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="img/logo.png.webp" alt="Logo Café Tierra Aroma">
+        <span>Café <strong>Tierra Aroma</strong></span>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Catálogo de productos</a></li>
+          <li><a href="carrito.html" class="activo">Carrito de compras</a></li>
+          <li><a href="historial.html">Historial de pedidos</a></li>
+          <li><a href="login.html">Login / Registro</a></li>
+          <li><a href="perfil.html">Perfil de usuario</a></li>
+          <li><a href="cerrar.html">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <main class="container section">
+    <h1>Carrito de compras</h1>
+    <p>Estos son los productos que has agregado a tu carrito.</p>
+
+    <div class="tabla-responsiva">
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Total</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Café Tostado 500g</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>$20.000</td>
+            <td>$20.000</td>
+            <td><button>Eliminar</button></td>
+          </tr>
+          <tr>
+            <td>Café Molido 250g</td>
+            <td><input type="number" value="2" min="1"></td>
+            <td>$12.000</td>
+            <td>$24.000</td>
+            <td><button>Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total-carrito">
+      <h3>Total: $44.000</h3>
+      <button>Finalizar compra</button>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div class="social-links">
+        <a href="https://www.instagram.com/cafetierra_aroma" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/people/Caf%C3%A9-Tierra-Aroma/61552959929312" target="_blank">Facebook</a>
+        <a href="https://api.whatsapp.com/send/?phone=3125735183" target="_blank">WhatsApp</a>
+      </div>
+      <p>&copy; <span id="year"></span> Café Tierra Aroma</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
